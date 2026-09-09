@@ -1,0 +1,395 @@
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+  position: relative;
+  background: #0f172a;
+  color: #f8fafc;
+  overflow: hidden;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.about-intro {
+  min-height: 100vh;
+  padding: 120px 8vw 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+}
+
+.about-intro-number {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 35px;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: #94a3b8;
+}
+
+.about-line {
+  width: 45px;
+  height: 1px;
+  background: #64748b;
+}
+
+.about-intro h2 {
+  max-width: 1000px;
+
+  margin: 0;
+
+  font-size: clamp(3.5rem, 8vw, 8rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+  font-weight: 600;
+}
+
+.about-intro h2 span {
+  color: #64748b;
+}
+
+.about-intro > p {
+  max-width: 560px;
+
+  margin-top: 45px;
+
+  font-size: 18px;
+  line-height: 1.8;
+  color: #94a3b8;
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: 45px;
+  left: 8vw;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+
+  color: #64748b;
+}
+
+.scroll-arrow {
+  font-size: 20px;
+  color: #f8fafc;
+
+  animation: scrollArrow 1.8s ease-in-out infinite;
+}
+
+@keyframes scrollArrow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+/* =========================
+   STACK
+========================= */
+
+.about-stack {
+  position: relative;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.about-card {
+  position: sticky;
+  top: 0;
+
+  min-height: 100vh;
+
+  padding: 50px 8vw;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.about-card-inner {
+  width: 100%;
+  min-height: 78vh;
+
+  padding: 45px;
+
+  border-radius: 28px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: relative;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow:
+    0 -20px 60px rgba(0, 0, 0, 0.15),
+    0 30px 80px rgba(0, 0, 0, 0.2);
+}
+
+/* Card backgrounds */
+
+.about-card-one {
+  z-index: 1;
+}
+
+.about-card-one .about-card-inner {
+  background: #172033;
+}
+
+.about-card-two {
+  z-index: 2;
+}
+
+.about-card-two .about-card-inner {
+  background: #1c293d;
+}
+
+.about-card-three {
+  z-index: 3;
+}
+
+.about-card-three .about-card-inner {
+  background: #222f43;
+}
+
+.about-card-four {
+  z-index: 4;
+}
+
+.about-card-four .about-card-inner {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+/* =========================
+   CARD TOP
+========================= */
+
+.about-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-number,
+.about-label,
+.about-small-label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+}
+
+.about-number {
+  color: #94a3b8;
+}
+
+.about-label {
+  color: #64748b;
+}
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.about-card-content {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+
+  gap: 80px;
+
+  align-items: end;
+}
+
+.about-card-heading {
+  max-width: 800px;
+}
+
+.about-small-label {
+  display: block;
+
+  margin-bottom: 20px;
+
+  color: #64748b;
+}
+
+.about-card h3 {
+  margin: 0;
+
+  font-size: clamp(2.8rem, 5vw, 6rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+}
+
+.about-card-description {
+  max-width: 450px;
+}
+
+.about-description {
+  margin: 0 0 25px;
+
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.about-text {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.8;
+
+  color: #94a3b8;
+}
+
+/* =========================
+   TECHNOLOGIES
+========================= */
+
+.about-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin-top: 50px;
+}
+
+.about-tech span {
+  padding: 9px 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+
+  color: #cbd5e1;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.about-tech span:hover {
+  background: #f8fafc;
+  color: #0f172a;
+
+  transform: translateY(-3px);
+}
+
+/* =========================
+   FINAL GOAL
+========================= */
+
+.about-goal {
+  display: flex;
+  align-items: flex-end;
+  gap: 25px;
+
+  margin-top: 50px;
+
+  font-family: "JetBrains Mono", monospace;
+}
+
+.about-goal span {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+}
+
+.about-goal strong {
+  font-family: inherit;
+
+  font-size: clamp(2rem, 4vw, 5rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+
+.goal-arrow {
+  font-size: 45px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .about-intro {
+    min-height: 85vh;
+    padding: 90px 24px;
+  }
+
+  .about-intro h2 {
+    font-size: clamp(3rem, 14vw, 5rem);
+  }
+
+  .about-intro > p {
+    font-size: 16px;
+  }
+
+  .scroll-hint {
+    left: 24px;
+    bottom: 30px;
+  }
+
+  .about-card {
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .about-card-inner {
+    min-height: 90vh;
+    padding: 28px;
+
+    border-radius: 22px;
+  }
+
+  .about-card-content {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .about-card h3 {
+    font-size: clamp(2.5rem, 11vw, 4rem);
+  }
+
+  .about-description {
+    font-size: 17px;
+  }
+
+  .about-text {
+    font-size: 14px;
+  }
+
+  .about-tech {
+    margin-top: 30px;
+  }
+
+  .about-goal {
+    flex-wrap: wrap;
+  }
+}
+
