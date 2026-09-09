@@ -1,12 +1,12 @@
 const education = [
   {
-    year: "2019 — 2021",
+    year: "2018 — 2022",
     degree: "Bachlors in Engineering ",
     field: "Information Technology",
     institute: "Xavier Institute of Engineering",
   },
   {
-    year: "2016 — 2019",
+    year: "2017 — 2018",
     degree: "Higher Secondary Certificate",
     field: "Science",
     institute: "KC College",

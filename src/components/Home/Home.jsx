@@ -28,7 +28,7 @@ function Home() {
             <div className="mt-8 max-w-xl">
 
               <h2 className="text-xl md:text-2xl font-semibold text-gray-800">
-                UI Developer
+                UI Developer / Web content publisher
               </h2>
 
               <p className="mt-4 text-gray-500 text-base md:text-lg leading-relaxed">
@@ -88,17 +88,16 @@ function Home() {
               </div>
 
               {/* Experience Card */}
-              <div className="absolute -bottom-7 -left-6 md:-left-10 bg-white border border-gray-200 rounded-2xl p-5 shadow-lg">
+            <div className="absolute -bottom-7 -left-4 md:-left-10 bg-white border border-gray-200 rounded-2xl p-5 shadow-lg">
 
-                <p className="text-3xl font-bold text-gray-900">
-                  03+
-                </p>
+              <p className="text-3xl font-bold text-gray-900">
+                03+
+              </p>
 
-                <p className="text-xs text-gray-500 mt-1">
-                  Years of experience
-                </p>
-
-              </div>
+              <p className="text-xs text-gray-500 mt-1">
+               Years of experience
+              </p>
+            </div>
 
             </div>
 

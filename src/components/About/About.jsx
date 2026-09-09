@@ -38,7 +38,7 @@ function About() {
         "I’m currently expanding my expertise into backend development and learning how the different pieces of a web application connect.",
       text:
         "My current focus includes building a stronger understanding of backend architecture, APIs, databases, and server-side development.",
-      technologies: ["Node.js", "Express.js", "MongoDB", "REST APIs"],
+      technologies: ["Node.js", "MongoDB", "REST APIs"],
       className: "about-card-three",
     },
     {

@@ -14,6 +14,10 @@ function Navbar() {
         About
       </a>
 
+      <a href="#experience" className="nav-link">
+        Experience
+      </a>
+
       <a href="#skills" className="nav-link">
         Skills
       </a>
