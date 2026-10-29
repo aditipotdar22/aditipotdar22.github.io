@@ -1,5 +1,5 @@
 import profileImage from "../../assets/images/hero-banner.jpg";
-import Resume from "../../assets/pdf/Resume.pdf";
+import Resume from "../../assets/pdf/aditi-potdar-resume.pdf";
 
 function Home() {
   return (
